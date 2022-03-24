@@ -1,7 +1,8 @@
 import { CacheProvider } from './CacheContext';
 import Router from './Router';
+import appTitle from './Constants/appTitle';
 
-document.title = 'Directory of Cryptocurrency Exchanges';
+document.title = appTitle;
 
 function App() {
   return (
