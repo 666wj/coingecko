@@ -6,7 +6,7 @@ const Router = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/coingecko/:id" element={<ExchangeDetailView />} />
-      <Route path="/" element={<MainPage />} />
+      <Route path="/coingecko" element={<MainPage />} />
     </Routes>
   </BrowserRouter>
 );

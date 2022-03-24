@@ -24,15 +24,17 @@ const ExchangeDetailView = () => {
   } = cache.exchanges.find((exchange) => exchange.id === selectedExchangeID) ||
   {};
 
+  const backToMainPage = () => navigate('/coingecko');
+
   useEffect(() => {
     if (cache.exchanges.length === 0) {
-      navigate('/');
+      backToMainPage();
     }
   }, []);
 
   return (
     <Padding>
-      <Button height="35px" width="fit-content" onClick={() => navigate('/')}>
+      <Button height="35px" width="fit-content" onClick={backToMainPage}>
         Back to Main Page
       </Button>
       <Flex direction="column">
