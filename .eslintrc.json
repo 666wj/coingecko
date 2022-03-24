@@ -11,6 +11,12 @@
     "no-unused-vars": "error",
     "react/react-in-jsx-scope": "off",
     "allowImportExportEverywhere": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-underscore-dangle": "off",
+    "react/function-component-definition": [
+      1,
+      { "namedComponents": ["arrow-function", "function-declaration"] }
+    ],
+    "react/prop-types": "off"
   }
 }
