@@ -1,4 +1,3 @@
-import './App.css';
 import { CacheProvider } from './CacheContext';
 import Router from './Router';
 
